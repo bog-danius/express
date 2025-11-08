@@ -1,0 +1,78 @@
+[
+  {
+    "id": "101",
+    "name": "Red Dragons",
+    "members": [
+      "Alice",
+      "Bob",
+      "Charlie"
+    ],
+    "meta": {
+      "country": "FI"
+    }
+  },
+  {
+    "id": "102",
+    "name": "Blue Phoenix",
+    "members": [
+      "David",
+      "Eve",
+      "Frank"
+    ],
+    "meta": {
+      "country": "SE"
+    }
+  },
+  {
+    "id": "103",
+    "name": "Green Tigers",
+    "members": [
+      "Grace",
+      "Hank",
+      "Ivy"
+    ],
+    "meta": {
+      "country": "NO"
+    }
+  },
+  {
+    "id": "bc800cc3-21e4-4f18-b928-eff10cccfbb9",
+    "name": "jene",
+    "members": [
+      "jene"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "01fb4e30-67b2-40ab-9698-e60c50d251a9",
+    "name": "dfghdfh",
+    "members": [
+      "dsfhdfghd"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "7ba19910-0b42-4d12-89df-fdc1867d499d",
+    "name": "dsfsd",
+    "members": [
+      "sdf"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "c504df23-d9c0-46fb-bee5-0bb7a94d1f8f",
+    "name": "sdf",
+    "members": [
+      "sf"
+    ],
+    "meta": {}
+  },
+  {
+    "id": "b10ae1bc-d6fd-482e-9153-79af4ef0aff6",
+    "name": "фывф",
+    "members": [
+      "фыв"
+    ],
+    "meta": {}
+  }
+]

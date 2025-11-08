@@ -1,0 +1,60 @@
+[
+  {
+    "id": "202",
+    "tournamentId": 1,
+    "teamAId": "102",
+    "teamBId": "103",
+    "result": {
+      "scoreA": 10,
+      "scoreB": 20,
+      "ts": "2025-11-08T19:15:56.987Z"
+    },
+    "history": [
+      {
+        "action": "result_added",
+        "scoreA": 2,
+        "scoreB": 4,
+        "ts": "2025-11-08T19:06:13.548Z"
+      },
+      {
+        "action": "result_added",
+        "scoreA": 10,
+        "scoreB": 20,
+        "ts": "2025-11-08T19:15:56.987Z"
+      }
+    ],
+    "status": "completed"
+  },
+  {
+    "id": "203",
+    "tournamentId": 2,
+    "teamAId": "101",
+    "teamBId": "103",
+    "result": {
+      "scoreA": 4,
+      "scoreB": 0,
+      "ts": "2025-11-08T19:36:16.371Z"
+    },
+    "history": [
+      {
+        "action": "result_added",
+        "scoreA": 5,
+        "scoreB": 1,
+        "ts": "2025-11-08T19:06:32.233Z"
+      },
+      {
+        "action": "result_added",
+        "scoreA": 0,
+        "scoreB": 1,
+        "ts": "2025-11-08T19:29:04.006Z"
+      },
+      {
+        "action": "result_added",
+        "scoreA": 4,
+        "scoreB": 0,
+        "ts": "2025-11-08T19:36:16.371Z"
+      }
+    ],
+    "status": "completed"
+  }
+]
