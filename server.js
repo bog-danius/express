@@ -4,7 +4,7 @@ import path from 'path';
 import cors from 'cors';
 import { v4 as uuidv4 } from 'uuid';
 import { fileURLToPath } from 'url';
-
+import { toXML } from 'jstoxml';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -59,49 +59,9 @@ async function writeJson(filename, data) {
 
 // Функция для преобразования JSON в XML
 function jsonToXml(data) {
-    let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
-    xml += '<matches>\n';
-
-    data.forEach(match => {
-        xml += '  <match>\n';
-        xml += `    <id>${match.id}</id>\n`;
-        xml += `    <tournamentId>${match.tournamentId}</tournamentId>\n`;
-        xml += `    <teamAId>${match.teamAId}</teamAId>\n`;
-        xml += `    <teamBId>${match.teamBId}</teamBId>\n`;
-        xml += `    <status>${match.status}</status>\n`;
-        xml += `    <scheduledTime>${match.scheduledTime}</scheduledTime>\n`;
-        xml += `    <createdAt>${match.createdAt}</createdAt>\n`;
-
-        if (match.result) {
-            xml += '    <result>\n';
-            xml += `      <scoreA>${match.result.scoreA}</scoreA>\n`;
-            xml += `      <scoreB>${match.result.scoreB}</scoreB>\n`;
-            xml += `      <timestamp>${match.result.ts}</timestamp>\n`;
-            xml += '    </result>\n';
-        }
-
-        if (match.history && match.history.length > 0) {
-            xml += '    <history>\n';
-            match.history.forEach(historyItem => {
-                xml += '      <entry>\n';
-                xml += `        <action>${historyItem.action}</action>\n`;
-                xml += `        <timestamp>${historyItem.ts}</timestamp>\n`;
-                if (historyItem.scoreA !== undefined) {
-                    xml += `        <scoreA>${historyItem.scoreA}</scoreA>\n`;
-                }
-                if (historyItem.scoreB !== undefined) {
-                    xml += `        <scoreB>${historyItem.scoreB}</scoreB>\n`;
-                }
-                xml += '      </entry>\n';
-            });
-            xml += '    </history>\n';
-        }
-
-        xml += '  </match>\n';
-    });
-
-    xml += '</matches>';
-    return xml;
+    let xml = toXML(data);
+    xml = `<json>${xml}</json>`
+    return  xml;
 }
 
 // Функция для создания HTML таблицы
